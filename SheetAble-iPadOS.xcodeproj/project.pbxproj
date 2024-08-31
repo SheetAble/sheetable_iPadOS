@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B305E5D2C833A5C00AFDCC2 /* SheetAble_iPadOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B305E5C2C833A5C00AFDCC2 /* SheetAble_iPadOSApp.swift */; };
+		4B305E5F2C833A5C00AFDCC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B305E5E2C833A5C00AFDCC2 /* ContentView.swift */; };
+		4B305E612C833A5E00AFDCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B305E602C833A5E00AFDCC2 /* Assets.xcassets */; };
+		4B305E642C833A5E00AFDCC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B305E632C833A5E00AFDCC2 /* Preview Assets.xcassets */; };
+		4B305E6E2C833A5E00AFDCC2 /* SheetAble_iPadOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B305E6D2C833A5E00AFDCC2 /* SheetAble_iPadOSTests.swift */; };
+		4B305E782C833A5E00AFDCC2 /* SheetAble_iPadOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B305E772C833A5E00AFDCC2 /* SheetAble_iPadOSUITests.swift */; };
+		4B305E7A2C833A5E00AFDCC2 /* SheetAble_iPadOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B305E792C833A5E00AFDCC2 /* SheetAble_iPadOSUITestsLaunchTests.swift */; };
+		4B305E872C8342CB00AFDCC2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4B305E862C8342CB00AFDCC2 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B305E6A2C833A5E00AFDCC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B305E512C833A5C00AFDCC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B305E582C833A5C00AFDCC2;
+			remoteInfo = "SheetAble-iPadOS";
+		};
+		4B305E742C833A5E00AFDCC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B305E512C833A5C00AFDCC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B305E582C833A5C00AFDCC2;
+			remoteInfo = "SheetAble-iPadOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B305E592C833A5C00AFDCC2 /* SheetAble-iPadOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SheetAble-iPadOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B305E5C2C833A5C00AFDCC2 /* SheetAble_iPadOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAble_iPadOSApp.swift; sourceTree = "<group>"; };
+		4B305E5E2C833A5C00AFDCC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B305E602C833A5E00AFDCC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B305E632C833A5E00AFDCC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B305E692C833A5E00AFDCC2 /* SheetAble-iPadOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SheetAble-iPadOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B305E6D2C833A5E00AFDCC2 /* SheetAble_iPadOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAble_iPadOSTests.swift; sourceTree = "<group>"; };
+		4B305E732C833A5E00AFDCC2 /* SheetAble-iPadOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SheetAble-iPadOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B305E772C833A5E00AFDCC2 /* SheetAble_iPadOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAble_iPadOSUITests.swift; sourceTree = "<group>"; };
+		4B305E792C833A5E00AFDCC2 /* SheetAble_iPadOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAble_iPadOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B305E862C8342CB00AFDCC2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B305E562C833A5C00AFDCC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B305E662C833A5E00AFDCC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B305E702C833A5E00AFDCC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B305E502C833A5C00AFDCC2 = {
+			isa = PBXGroup;
+			children = (
+				4B305E862C8342CB00AFDCC2 /* .gitignore */,
+				4B305E5B2C833A5C00AFDCC2 /* SheetAble-iPadOS */,
+				4B305E6C2C833A5E00AFDCC2 /* SheetAble-iPadOSTests */,
+				4B305E762C833A5E00AFDCC2 /* SheetAble-iPadOSUITests */,
+				4B305E5A2C833A5C00AFDCC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B305E5A2C833A5C00AFDCC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B305E592C833A5C00AFDCC2 /* SheetAble-iPadOS.app */,
+				4B305E692C833A5E00AFDCC2 /* SheetAble-iPadOSTests.xctest */,
+				4B305E732C833A5E00AFDCC2 /* SheetAble-iPadOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B305E5B2C833A5C00AFDCC2 /* SheetAble-iPadOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B305E5C2C833A5C00AFDCC2 /* SheetAble_iPadOSApp.swift */,
+				4B305E5E2C833A5C00AFDCC2 /* ContentView.swift */,
+				4B305E602C833A5E00AFDCC2 /* Assets.xcassets */,
+				4B305E622C833A5E00AFDCC2 /* Preview Content */,
+			);
+			path = "SheetAble-iPadOS";
+			sourceTree = "<group>";
+		};
+		4B305E622C833A5E00AFDCC2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B305E632C833A5E00AFDCC2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B305E6C2C833A5E00AFDCC2 /* SheetAble-iPadOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B305E6D2C833A5E00AFDCC2 /* SheetAble_iPadOSTests.swift */,
+			);
+			path = "SheetAble-iPadOSTests";
+			sourceTree = "<group>";
+		};
+		4B305E762C833A5E00AFDCC2 /* SheetAble-iPadOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B305E772C833A5E00AFDCC2 /* SheetAble_iPadOSUITests.swift */,
+				4B305E792C833A5E00AFDCC2 /* SheetAble_iPadOSUITestsLaunchTests.swift */,
+			);
+			path = "SheetAble-iPadOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B305E582C833A5C00AFDCC2 /* SheetAble-iPadOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B305E7D2C833A5E00AFDCC2 /* Build configuration list for PBXNativeTarget "SheetAble-iPadOS" */;
+			buildPhases = (
+				4B305E552C833A5C00AFDCC2 /* Sources */,
+				4B305E562C833A5C00AFDCC2 /* Frameworks */,
+				4B305E572C833A5C00AFDCC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SheetAble-iPadOS";
+			productName = "SheetAble-iPadOS";
+			productReference = 4B305E592C833A5C00AFDCC2 /* SheetAble-iPadOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B305E682C833A5E00AFDCC2 /* SheetAble-iPadOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B305E802C833A5E00AFDCC2 /* Build configuration list for PBXNativeTarget "SheetAble-iPadOSTests" */;
+			buildPhases = (
+				4B305E652C833A5E00AFDCC2 /* Sources */,
+				4B305E662C833A5E00AFDCC2 /* Frameworks */,
+				4B305E672C833A5E00AFDCC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B305E6B2C833A5E00AFDCC2 /* PBXTargetDependency */,
+			);
+			name = "SheetAble-iPadOSTests";
+			productName = "SheetAble-iPadOSTests";
+			productReference = 4B305E692C833A5E00AFDCC2 /* SheetAble-iPadOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B305E722C833A5E00AFDCC2 /* SheetAble-iPadOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B305E832C833A5E00AFDCC2 /* Build configuration list for PBXNativeTarget "SheetAble-iPadOSUITests" */;
+			buildPhases = (
+				4B305E6F2C833A5E00AFDCC2 /* Sources */,
+				4B305E702C833A5E00AFDCC2 /* Frameworks */,
+				4B305E712C833A5E00AFDCC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B305E752C833A5E00AFDCC2 /* PBXTargetDependency */,
+			);
+			name = "SheetAble-iPadOSUITests";
+			productName = "SheetAble-iPadOSUITests";
+			productReference = 4B305E732C833A5E00AFDCC2 /* SheetAble-iPadOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B305E512C833A5C00AFDCC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4B305E582C833A5C00AFDCC2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4B305E682C833A5E00AFDCC2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4B305E582C833A5C00AFDCC2;
+					};
+					4B305E722C833A5E00AFDCC2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4B305E582C833A5C00AFDCC2;
+					};
+				};
+			};
+			buildConfigurationList = 4B305E542C833A5C00AFDCC2 /* Build configuration list for PBXProject "SheetAble-iPadOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B305E502C833A5C00AFDCC2;
+			productRefGroup = 4B305E5A2C833A5C00AFDCC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B305E582C833A5C00AFDCC2 /* SheetAble-iPadOS */,
+				4B305E682C833A5E00AFDCC2 /* SheetAble-iPadOSTests */,
+				4B305E722C833A5E00AFDCC2 /* SheetAble-iPadOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B305E572C833A5C00AFDCC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B305E642C833A5E00AFDCC2 /* Preview Assets.xcassets in Resources */,
+				4B305E872C8342CB00AFDCC2 /* .gitignore in Resources */,
+				4B305E612C833A5E00AFDCC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B305E672C833A5E00AFDCC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B305E712C833A5E00AFDCC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B305E552C833A5C00AFDCC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B305E5F2C833A5C00AFDCC2 /* ContentView.swift in Sources */,
+				4B305E5D2C833A5C00AFDCC2 /* SheetAble_iPadOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B305E652C833A5E00AFDCC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B305E6E2C833A5E00AFDCC2 /* SheetAble_iPadOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B305E6F2C833A5E00AFDCC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B305E7A2C833A5E00AFDCC2 /* SheetAble_iPadOSUITestsLaunchTests.swift in Sources */,
+				4B305E782C833A5E00AFDCC2 /* SheetAble_iPadOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B305E6B2C833A5E00AFDCC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B305E582C833A5C00AFDCC2 /* SheetAble-iPadOS */;
+			targetProxy = 4B305E6A2C833A5E00AFDCC2 /* PBXContainerItemProxy */;
+		};
+		4B305E752C833A5E00AFDCC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B305E582C833A5C00AFDCC2 /* SheetAble-iPadOS */;
+			targetProxy = 4B305E742C833A5E00AFDCC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B305E7B2C833A5E00AFDCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B305E7C2C833A5E00AFDCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B305E7E2C833A5E00AFDCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SheetAble-iPadOS/Preview Content\"";
+				DEVELOPMENT_TEAM = AGL6C9PVCW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.sheetable.SheetAble-iPadOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B305E7F2C833A5E00AFDCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SheetAble-iPadOS/Preview Content\"";
+				DEVELOPMENT_TEAM = AGL6C9PVCW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.sheetable.SheetAble-iPadOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B305E812C833A5E00AFDCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGL6C9PVCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.sheetable.SheetAble-iPadOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SheetAble-iPadOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SheetAble-iPadOS";
+			};
+			name = Debug;
+		};
+		4B305E822C833A5E00AFDCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGL6C9PVCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.sheetable.SheetAble-iPadOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SheetAble-iPadOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SheetAble-iPadOS";
+			};
+			name = Release;
+		};
+		4B305E842C833A5E00AFDCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGL6C9PVCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.sheetable.SheetAble-iPadOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SheetAble-iPadOS";
+			};
+			name = Debug;
+		};
+		4B305E852C833A5E00AFDCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGL6C9PVCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.sheetable.SheetAble-iPadOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SheetAble-iPadOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B305E542C833A5C00AFDCC2 /* Build configuration list for PBXProject "SheetAble-iPadOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B305E7B2C833A5E00AFDCC2 /* Debug */,
+				4B305E7C2C833A5E00AFDCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B305E7D2C833A5E00AFDCC2 /* Build configuration list for PBXNativeTarget "SheetAble-iPadOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B305E7E2C833A5E00AFDCC2 /* Debug */,
+				4B305E7F2C833A5E00AFDCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B305E802C833A5E00AFDCC2 /* Build configuration list for PBXNativeTarget "SheetAble-iPadOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B305E812C833A5E00AFDCC2 /* Debug */,
+				4B305E822C833A5E00AFDCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B305E832C833A5E00AFDCC2 /* Build configuration list for PBXNativeTarget "SheetAble-iPadOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B305E842C833A5E00AFDCC2 /* Debug */,
+				4B305E852C833A5E00AFDCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B305E512C833A5C00AFDCC2 /* Project object */;
+}
