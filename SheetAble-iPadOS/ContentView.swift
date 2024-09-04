@@ -6,9 +6,10 @@ struct Sheet: Identifiable, Hashable {
     let age: Int
 }
 
-let sheets = [Sheet(name: "test", age: 10)]
 
 struct ContentView: View {
+    let sheets = [Sheet(name: "test", age: 10)]
+
     var body: some View {
         TabView {
             VStack {
@@ -39,9 +40,9 @@ struct ContentView: View {
                     Label("Received", systemImage: "tray.and.arrow.down.fill")
                 }.badge(2)
             
-            SheetView(sheet: sheets[0])
+            DrawView()
                 .tabItem {
-                    Label("Drawing", systemImage: "pencil")
+                    Label("Drawing", systemImage: "square.and.pencil")
                 }
             
             SheetView(sheet: sheets[0])
