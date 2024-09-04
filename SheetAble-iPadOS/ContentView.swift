@@ -38,7 +38,7 @@ struct ContentView: View {
                     }
                 }.padding()}.tabItem {
                     Label("Received", systemImage: "tray.and.arrow.down.fill")
-                }.badge(2)
+                }
             
             DrawView()
                 .tabItem {
@@ -49,7 +49,6 @@ struct ContentView: View {
                 .tabItem {
                     Label("Account", systemImage: "person.crop.circle.fill")
                 }
-                .badge("!")
         }}
                     
     }

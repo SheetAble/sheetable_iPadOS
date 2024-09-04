@@ -12,6 +12,7 @@ import PencilKit
 struct CanvasView: UIViewRepresentable {
     class Coordinator: NSObject {
         var canvasView: PKCanvasView
+        var toolPicker: PKToolPicker?
         
         init(canvasView: PKCanvasView) {
             self.canvasView = canvasView
@@ -19,26 +20,29 @@ struct CanvasView: UIViewRepresentable {
     }
     
     func makeCoordinator() -> Coordinator {
-        return Coordinator(canvasView: PKCanvasView())
+        let canvasView = PKCanvasView()
+        return Coordinator(canvasView: canvasView)
     }
-
     
     func makeUIView(context: Context) -> PKCanvasView {
         let canvasView = PKCanvasView()
-        let toolPicker = PKToolPicker()
+        canvasView.backgroundColor = .white
         
+        // Setup tool picker
+        let toolPicker = PKToolPicker()
         toolPicker.setVisible(true, forFirstResponder: canvasView)
         toolPicker.addObserver(canvasView)
         
-        canvasView.backgroundColor = .lightGray
-        
+        // Make canvas view the first responder so the tool picker is shown
         canvasView.becomeFirstResponder()
+        
+        // Set the toolPicker to the coordinator for later updates
+        context.coordinator.toolPicker = toolPicker
+        
         return canvasView
     }
     
     func updateUIView(_ uiView: PKCanvasView, context: Context) {
-        // Update the canvasView if needed based on SwiftUI state changes
+        // Here you might handle updates if your view's state changes
     }
-
-    // You can add methods here to handle actions or state changes if necessary
 }
