@@ -49,6 +49,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Account", systemImage: "person.crop.circle.fill")
                 }
+            PDFView()
+                .tabItem {
+                    Label("PDF Page", systemImage: "doc")
+                }
         }}
                     
     }

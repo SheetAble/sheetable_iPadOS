@@ -18,6 +18,7 @@
 		4B7FC72F2C887E9600B1D5E2 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC72E2C887E9600B1D5E2 /* SheetView.swift */; };
 		4B7FC7312C88850C00B1D5E2 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC7302C88850C00B1D5E2 /* DrawView.swift */; };
 		4B7FC7332C88927100B1D5E2 /* CanvasViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC7322C88927100B1D5E2 /* CanvasViewRepresentable.swift */; };
+		4B7FC73B2C91B14D00B1D5E2 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC73A2C91B14D00B1D5E2 /* PDFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4B7FC72E2C887E9600B1D5E2 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		4B7FC7302C88850C00B1D5E2 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		4B7FC7322C88927100B1D5E2 /* CanvasViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewRepresentable.swift; sourceTree = "<group>"; };
+		4B7FC73A2C91B14D00B1D5E2 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				4B7FC72E2C887E9600B1D5E2 /* SheetView.swift */,
 				4B7FC7302C88850C00B1D5E2 /* DrawView.swift */,
 				4B7FC7322C88927100B1D5E2 /* CanvasViewRepresentable.swift */,
+				4B7FC73A2C91B14D00B1D5E2 /* PDFView.swift */,
 			);
 			path = "SheetAble-iPadOS";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				4B305E5F2C833A5C00AFDCC2 /* ContentView.swift in Sources */,
 				4B7FC72F2C887E9600B1D5E2 /* SheetView.swift in Sources */,
 				4B7FC7332C88927100B1D5E2 /* CanvasViewRepresentable.swift in Sources */,
+				4B7FC73B2C91B14D00B1D5E2 /* PDFView.swift in Sources */,
 				4B7FC7312C88850C00B1D5E2 /* DrawView.swift in Sources */,
 				4B305E5D2C833A5C00AFDCC2 /* SheetAble_iPadOSApp.swift in Sources */,
 			);
