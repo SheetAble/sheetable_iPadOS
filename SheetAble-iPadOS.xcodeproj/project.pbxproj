@@ -20,6 +20,7 @@
 		4B7FC7332C88927100B1D5E2 /* CanvasViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC7322C88927100B1D5E2 /* CanvasViewRepresentable.swift */; };
 		4B7FC73D2C91DBA300B1D5E2 /* PDFViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC73C2C91DBA300B1D5E2 /* PDFViewPage.swift */; };
 		4B7FC73F2C91DC9E00B1D5E2 /* PDFKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC73E2C91DC9E00B1D5E2 /* PDFKitViewRepresentable.swift */; };
+		4B7FC7412C91DF6300B1D5E2 /* CombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7FC7402C91DF6300B1D5E2 /* CombinationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4B7FC7322C88927100B1D5E2 /* CanvasViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewRepresentable.swift; sourceTree = "<group>"; };
 		4B7FC73C2C91DBA300B1D5E2 /* PDFViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewPage.swift; sourceTree = "<group>"; };
 		4B7FC73E2C91DC9E00B1D5E2 /* PDFKitViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitViewRepresentable.swift; sourceTree = "<group>"; };
+		4B7FC7402C91DF6300B1D5E2 /* CombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				4B7FC7322C88927100B1D5E2 /* CanvasViewRepresentable.swift */,
 				4B7FC73C2C91DBA300B1D5E2 /* PDFViewPage.swift */,
 				4B7FC73E2C91DC9E00B1D5E2 /* PDFKitViewRepresentable.swift */,
+				4B7FC7402C91DF6300B1D5E2 /* CombinationView.swift */,
 			);
 			path = "SheetAble-iPadOS";
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				4B7FC7332C88927100B1D5E2 /* CanvasViewRepresentable.swift in Sources */,
 				4B7FC7312C88850C00B1D5E2 /* DrawView.swift in Sources */,
 				4B7FC73F2C91DC9E00B1D5E2 /* PDFKitViewRepresentable.swift in Sources */,
+				4B7FC7412C91DF6300B1D5E2 /* CombinationView.swift in Sources */,
 				4B305E5D2C833A5C00AFDCC2 /* SheetAble_iPadOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

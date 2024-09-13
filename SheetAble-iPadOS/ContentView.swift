@@ -53,6 +53,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("PDF Page", systemImage: "doc")
                 }
+            CombinationView()
+                .tabItem {
+                    Label("Combination", systemImage: "doc.text")
+                }
         }}
                     
     }
