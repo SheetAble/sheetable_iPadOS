@@ -10,7 +10,8 @@ import PencilKit
 
 struct DrawView: View {
     var body: some View {
-        CanvasView()/*.frame(width: 300, height: 400)*/
+//        CanvasView()/*.frame(width: 300, height: 400)*/
+        Text("test")
     }
 }
 

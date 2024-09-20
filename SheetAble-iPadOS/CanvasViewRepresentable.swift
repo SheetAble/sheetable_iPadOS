@@ -10,50 +10,35 @@ import PencilKit
 
 /// A SwiftUI view wrapper for PKCanvasView, which integrates PencilKit's drawing capabilities.
 struct CanvasView: UIViewRepresentable {
-    /// Coordinator class to manage interactions between UIKit and SwiftUI.
-    class Coordinator: NSObject {
-        var canvasView: PKCanvasView
-        var toolPicker: PKToolPicker?
-
-        init(canvasView: PKCanvasView) {
-            self.canvasView = canvasView
-        }
-    }
-
-    func makeCoordinator() -> Coordinator {
-        let canvasView = PKCanvasView()
-        return Coordinator(canvasView: canvasView)
-    }
-
+    @Binding var canvasView: PKCanvasView
     
-    /// Creates and configures the PKCanvasView and PKToolPicker.
-    /// This method is called when the SwiftUI view is created.
     func makeUIView(context: Context) -> PKCanvasView {
-        let canvasView = PKCanvasView()
-        canvasView.backgroundColor = .clear
-
-        // Create a new tool picker instance
-        let toolPicker = PKToolPicker()
-        toolPicker.setVisible(true, forFirstResponder: canvasView) // Make the tool picker visible
-        toolPicker.addObserver(canvasView) // Add the canvas view as an observer for the tool picker
-
-        DispatchQueue.main.async {
-            canvasView.becomeFirstResponder() // Ensure the canvas view becomes the first responder
-        }
-
-        // Store the tool picker in the coordinator for further updates
-        context.coordinator.toolPicker = toolPicker
+        // Initialize the tool and tool picker
+        let canvas = canvasView
+        canvas.tool = PKInkingTool(.pen, color: .black, width: 1)
+        canvas.backgroundColor = .clear
+        canvas.isOpaque = false
         
-        return canvasView
+        let toolPicker = PKToolPicker()
+        toolPicker.setVisible(true, forFirstResponder: canvas)
+        toolPicker.addObserver(canvas)
+        
+        DispatchQueue.main.async {
+            canvas.becomeFirstResponder()
+        }
+        
+        return canvas
     }
     
-    /// Updates the PKCanvasView when SwiftUI state changes.
-    /// This method is called whenever SwiftUI determines the view needs to be updated.
     func updateUIView(_ uiView: PKCanvasView, context: Context) {
-            if let toolPicker = context.coordinator.toolPicker {
-                toolPicker.setVisible(true, forFirstResponder: uiView)
-                uiView.becomeFirstResponder() // Ensure the canvas stays first responder when updated
+        // Ensure the tool picker remains visible
+        if let window = uiView.window,
+           let toolPicker = PKToolPicker.shared(for: window) {
+            toolPicker.setVisible(true, forFirstResponder: uiView)
+            toolPicker.addObserver(uiView)
+            DispatchQueue.main.async {
+                uiView.becomeFirstResponder()
             }
         }
-
+    }
 }
