@@ -7,10 +7,10 @@
 
 import SwiftUI
 import PDFKit
-
 struct PDFKitView: UIViewRepresentable {
     let pdfDocument: PDFDocument?
     @Binding var currentPage: Int
+    @Binding var zoomScale: CGFloat // Add a zoomScale binding
 
     func makeUIView(context: Context) -> PDFView {
         let pdfView = PDFView()
@@ -29,6 +29,8 @@ struct PDFKitView: UIViewRepresentable {
                 uiView.go(to: page)
             }
         }
+
+        // Set zoom scale based on the binding
+        uiView.scaleFactor = zoomScale
     }
 }
-

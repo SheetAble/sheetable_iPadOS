@@ -11,33 +11,71 @@ import PencilKit
 /// A SwiftUI view wrapper for PKCanvasView, which integrates PencilKit's drawing capabilities.
 struct CanvasView: UIViewRepresentable {
     @Binding var canvasView: PKCanvasView
-    
-    func makeUIView(context: Context) -> PKCanvasView {
-        // Initialize the tool and tool picker
-        let canvas = canvasView
-        canvas.tool = PKInkingTool(.pen, color: .black, width: 1)
-        canvas.backgroundColor = .clear
-        canvas.isOpaque = false
-        
-        let toolPicker = PKToolPicker()
-        toolPicker.setVisible(true, forFirstResponder: canvas)
-        toolPicker.addObserver(canvas)
-        
+    let toolPicker: PKToolPicker // Pass the tool picker from the parent view
+
+    func makeUIView(context: Context) -> UIScrollView {
+        let scrollView = UIScrollView()
+        scrollView.delegate = context.coordinator
+        scrollView.minimumZoomScale = 1.0
+        scrollView.maximumZoomScale = 5.0
+
+        // Setup PKCanvasView
+        canvasView.tool = PKInkingTool(.pen, color: .black, width: 1)
+        canvasView.backgroundColor = .clear
+        canvasView.isOpaque = false
+        canvasView.drawingPolicy = .anyInput
+
+        // Add the canvas view to the scroll view
+        scrollView.addSubview(canvasView)
+        canvasView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            canvasView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            canvasView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            canvasView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            canvasView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            canvasView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            canvasView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
+        ])
+
+        // Attach the tool picker
+        toolPicker.setVisible(true, forFirstResponder: canvasView)
+        toolPicker.addObserver(canvasView)
         DispatchQueue.main.async {
-            canvas.becomeFirstResponder()
+            canvasView.becomeFirstResponder()
         }
-        
-        return canvas
+
+        return scrollView
     }
-    
-    func updateUIView(_ uiView: PKCanvasView, context: Context) {
-        // Ensure the tool picker remains visible
-        if let window = uiView.window,
-           let toolPicker = PKToolPicker.shared(for: window) {
-            toolPicker.setVisible(true, forFirstResponder: uiView)
-            toolPicker.addObserver(uiView)
-            DispatchQueue.main.async {
-                uiView.becomeFirstResponder()
+
+    func updateUIView(_ uiView: UIScrollView, context: Context) {
+        // No need to apply transforms to the canvas itself; scrollView handles zoom
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    class Coordinator: NSObject, UIScrollViewDelegate {
+        var parent: CanvasView
+
+        init(_ parent: CanvasView) {
+            self.parent = parent
+        }
+
+        func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+            return parent.canvasView // No need for 'self' here, it's not inside a closure
+        }
+
+        func scrollViewDidZoom(_ scrollView: UIScrollView) {
+            // Ensure the tool picker remains active after zooming
+            if let window = parent.canvasView.window,
+               let toolPicker = PKToolPicker.shared(for: window) {
+                toolPicker.setVisible(true, forFirstResponder: parent.canvasView)
+                
+                // Explicitly using 'self' here because it's inside a closure
+                DispatchQueue.main.async {
+                    self.parent.canvasView.becomeFirstResponder() // 'self' is required here
+                }
             }
         }
     }

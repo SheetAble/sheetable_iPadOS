@@ -9,29 +9,15 @@ import SwiftUI
 import PDFKit
 import PencilKit
 
-//struct CombinationView: View {
-//    var body: some View {
-//        ZStack {
-//            PDFViewPage()   
-//
-//            DrawView().zIndex(1)
-//
-//        }
-//    }
-//}
-//
-//#Preview {
-//    CombinationView()
-//}
 
 struct CombinationView: View {
     @State private var pdfDocument: PDFDocument? = nil
     @State private var isLoading: Bool = true
     @State private var currentPage: Int = 0
     @State private var canvasView: PKCanvasView = PKCanvasView()
-    
-    // Manage the tool picker at this level
-    private let toolPicker = PKToolPicker()
+    @State private var zoomScale: CGFloat = 1.0 // Add zoom scale state
+
+    private let toolPicker = PKToolPicker() // Manage tool picker at this level
 
     let pdfURL = URL(string: "https://www.sldttc.org/allpdf/21583473018.pdf")!
     
@@ -56,13 +42,13 @@ struct CombinationView: View {
                         .disabled(currentPage >= (pdfDocument.pageCount - 1))
                     }
                     .padding()
-                    
+
                     ZStack {
-                        PDFKitView(pdfDocument: pdfDocument, currentPage: $currentPage)
-                        CanvasView(canvasView: $canvasView)
-                            .onAppear {
-                                attachToolPicker()
-                            }
+                        // PDF View with zoomScale binding
+                        PDFKitView(pdfDocument: pdfDocument, currentPage: $currentPage, zoomScale: $zoomScale)
+                        
+                        // Canvas View with Scroll for Zoom and ToolPicker
+                        CanvasView(canvasView: $canvasView, toolPicker: toolPicker)
                     }
                 }
             } else {
@@ -89,8 +75,7 @@ struct CombinationView: View {
     }
     
     func updateCanvas() {
-        canvasView.drawing = PKDrawing()
-        attachToolPicker() // Reattach the tool picker each time
+        canvasView.drawing = PKDrawing() // Reset the canvas content for new pages
     }
     
     func downloadPDF(from url: URL) {
@@ -109,14 +94,4 @@ struct CombinationView: View {
         }
         task.resume()
     }
-    
-    // Attach tool picker to the canvas view
-    func attachToolPicker() {
-        toolPicker.setVisible(true, forFirstResponder: canvasView)
-        toolPicker.addObserver(canvasView)
-        DispatchQueue.main.async {
-            canvasView.becomeFirstResponder()
-        }
-    }
 }
-

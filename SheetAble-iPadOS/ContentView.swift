@@ -39,19 +39,9 @@ struct ContentView: View {
                 }.padding()}.tabItem {
                     Label("Received", systemImage: "tray.and.arrow.down.fill")
                 }
-            
-            DrawView()
-                .tabItem {
-                    Label("Drawing", systemImage: "square.and.pencil")
-                }
-            
             SheetView(sheet: sheets[0])
                 .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
-                }
-            PDFViewPage()
-                .tabItem {
-                    Label("PDF Page", systemImage: "doc")
+                    Label("Sheet", systemImage: "person.crop.circle.fill")
                 }
             CombinationView()
                 .tabItem {
